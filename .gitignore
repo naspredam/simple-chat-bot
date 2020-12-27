@@ -3,6 +3,7 @@
 # dependencies
 /*/node_modules
 /.pnp
+/*/venv
 .pnp.js
 
 # testing
@@ -25,3 +26,4 @@ yarn-error.log*
 
 /*/.idea
 /*/dist
+/**/__pycache__
