@@ -1,15 +1,18 @@
+@import "src/design-tokens/colors";
+@import "src/design-tokens/spaces";
+
 .interaction-field-content {
-    padding: 5px 20px;
+    padding: 0 @medium-space @xsmall-space;
     width: 100%;
 }
 
 .interaction-field {
     font-style: oblique;
-    background: #F5F5F5;
-    color: coral;
+    background: @input-text-background;
+    color: @input-text-color;
     border: 0;
     width: 90%;
     font-size: large;
-    padding: 5px;
+    padding: @mini-space;
     outline:none;
 }

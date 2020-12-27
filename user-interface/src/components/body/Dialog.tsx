@@ -4,6 +4,7 @@ import { Posts } from 'components/body/Posts';
 import { completeRequestPost, createRequestPost, Post } from 'domain/post';
 import { PostsContext } from 'context/posts';
 import { v4 as uuidv4 } from 'uuid';
+import './dialog.less';
 
 const introductionPost: Post = (
     {
@@ -24,7 +25,7 @@ export const Dialog = () => {
         const post = createRequestPost(newPostText);
         const postInProgress = posts.concat(post);
         setPosts(postInProgress);
-        fetch(`http://localhost:5000?sentence=${newPostText}`)
+        fetch(`http://localhost:8080?sentence=${newPostText}`)
             .then((response: any) => response.json())
             .then(({ answer }: PostResponse) => {
                 const updatedPosts = postInProgress

@@ -1,34 +1,38 @@
+@import "src/design-tokens/colors.less";
+@import "src/design-tokens/spaces.less";
+
 .dialog-content {
     display: flex;
     flex-direction: column;
     align-items: self-start;
     list-style-type: none;
     padding: 0;
-    margin: 8px 20px;
+    margin: @tiny-space @medium-space;
 }
 
 .dialog-content > div {
-    margin-bottom: 4px;
+    margin-bottom: @mini-space;
 }
 
 .introduction {
-    color: cadetblue;
+    color: @introduction-color;
     font-size: large;
     font-weight: bold;
+    margin-top: @mini-space;
 }
 
 .input {
-    color: #DCDCDC;
+    color: @request-color;
     font-size: medium;
 }
 
 .response {
-    color: lightgreen;
+    color: @response-color;
     font-style: italic;
     font-size: medium;
-    margin: 8px 0 0 16px;
+    margin: @mini-space 0 0 @small-space;
 }
 
 .dialog-text-in-progress {
-    margin: 8px 0 0 16px;
+    margin: @mini-space 0 0 @small-space;
 }

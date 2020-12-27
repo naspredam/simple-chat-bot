@@ -4,14 +4,14 @@ let mainWindow;
 
 const createWindow = () => {
     mainWindow = new BrowserWindow({
-        width: 1024,
+        width: 512,
         height: 400,
-        webPreferences:{
+        webPreferences: {
             nodeIntegration: true
         }
     });
     mainWindow.loadFile('dist/index.html')
-    mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
     mainWindow.on('closed', function () {
         mainWindow = null
     })

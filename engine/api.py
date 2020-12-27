@@ -16,4 +16,4 @@ def ask_question():
     return jsonify({'answer': response})
 
 
-app.run(debug=False)
+app.run(host='0.0.0.0', debug=False)
