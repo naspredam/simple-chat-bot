@@ -1,0 +1,109 @@
+@import "src/design-tokens/colors";
+
+.bar-loader-content {
+  position: relative;
+  height: 15px;
+  margin-left: -16px;
+}
+
+#bars6 span {
+  position: absolute;
+  display: block;
+  bottom: 10px;
+  width: 8px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-animation: bars6 1.5s  infinite ease-in-out;
+  animation: bars6 1.5s infinite ease-in-out;
+}
+
+#bars6 span:nth-child(2) {
+  left: 10px;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+#bars6 span:nth-child(3) {
+  left: 20px;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+#bars6 span:nth-child(4) {
+  left: 30px;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+#bars6 span:nth-child(5) {
+  left: 40px;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+#bars6 span:nth-child(6) {
+  left: 50px;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes bars6 {
+  0% {
+    height: 5px;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    background: rgba(0, 0, 0, 0.25);
+  }
+  25% {
+    height: 20px;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    background: @three-dots-background;
+  }
+  50% {
+    height: 5px;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    height: 5px;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    background: rgba(0, 0, 0, 0.25);
+  }
+}
+@-webkit-keyframes bars6 {
+  0% {
+    height: 5px;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    background: rgba(0, 0, 0, 0.25);
+  }
+  25% {
+    height: 20px;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    background: @three-dots-background;
+  }
+  50% {
+    height: 5px;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    height: 5px;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    background: rgba(0, 0, 0, 0.25);
+  }
+}
