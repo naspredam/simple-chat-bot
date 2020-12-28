@@ -48,4 +48,5 @@ On the make file you will see that there are three tasks, as we did a task for s
 
 This command will:
 
-- build the docker image for the engine (on python/pytorch/
+- build the docker image for the engine (on python/pytorch/flask) on the port 8080
+- build the front end and start the dev mode of electron
