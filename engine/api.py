@@ -4,7 +4,6 @@ from flask_cors import CORS
 from infrastructure.chat import response_sentence
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
 CORS(app)
 
 
